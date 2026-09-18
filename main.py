@@ -11,7 +11,7 @@ with st.form('my_form'):
     text=st.text_area('Enter text:', '...')
     submitted = st.form_submit_button('Submit')
 
-    st.warning('Please enter your Groq API key!', icon ='⚠️')
+    
 if submitted and groq_api_key:
     generate_response(text)
 
